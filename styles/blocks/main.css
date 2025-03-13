@@ -1,0 +1,124 @@
+:root {
+  --logo-size: 90px;
+  --icon-size: 28px;
+  --first-color: #f4d98f;
+  --second-color: #ecebeb;
+  --third-color: #777676;
+  --font-size: 15px;
+}
+
+.main {
+  margin: 0;
+  padding-bottom: 100px;
+  background-color: black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__logo {
+  margin: 35px 0 12px;
+  padding: 0;
+  width: var(--logo-size);
+  height: var(--logo-size);
+}
+
+.main__logo-img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid var(--first-color);
+  box-sizing: border-box;
+}
+
+.main__title {
+  margin: 0 0 20px;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 400;
+  color: var(--first-color);
+}
+
+.main__payment {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid var(--first-color);
+  border-radius: 17px;
+  padding: 7px 12px;
+  text-decoration: none;
+  color: var(--second-color);
+  width: 72vw;
+  font-size: var(--font-size);
+  margin-bottom: 15px;
+  transition: background-color 0.3s;
+}
+
+.main__payment:hover {
+  background-color: var(--first-color);
+  color: black;
+}
+
+.main__payment-title {
+  margin: 0;
+  font-size: var(--font-size);
+  font-weight: normal;
+}
+
+.main__payment-logo {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-color: black;
+  border-radius: 25%;
+  padding: 4px;
+  margin-right: 10px;
+}
+
+.main__payment-details {
+  box-sizing: border-box;
+  color: var(--second-color);
+  font-size: var(--font-size);
+  border-radius: 17px;
+  width: 80vw;
+  padding-inline: 10px;
+  max-height: 0px; /* Початковий стан: прихований */
+  overflow: hidden; /* Приховуємо вміст, який виходить за межі */
+  transition: max-height 0.5s ease-out; /* Плавна анімація */
+  
+}
+
+.main__payment-details.active {
+  max-height: 1000px;
+  border: 2px solid var(--first-color);
+}
+
+.main__payment-details h4 {
+  font-weight: normal;
+}
+
+.main__payment-details--copy {
+  padding: 0;
+  border: none;
+  background-color: black;
+  cursor: pointer;
+}
+
+.main__payment-details--copy-img {
+  width: 16px;
+  height: 16px;
+}
+
+.main__payment-details--copy:active {
+  animation: pulse 1s ease;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1.5); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+

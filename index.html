@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="shortcut icon" href="img/ico1.png" type="image/x-icon">
+  <title>Parfum de otto</title>
+</head>
+<body class="page">
+  <main class="main">
+    <div class="main__logo">
+      <img 
+        src="img/avatar.png" 
+        alt="avatar" 
+        class="main__logo-img"
+      >
+    </div>
+
+    <h2 class="main__title">ottov_roma</h2>
+
+    <fieldset class="fieldset main__fieldset">
+      <legend class="fieldset__legend">Парфуми</legend>
+      <a href="https://www.instagram.com/parfum_de_otto" class="fieldset__link">
+        <img 
+          src="img/instagramm.png"
+          alt="small_logo"
+          class="fieldset__link-logo"
+        >
+        <h3 class="fieldset__link-title">parfum_de_otto</h3>
+      </a>
+      <a href="https://t.me/parfum_de_otto" class="fieldset__link">
+        <img 
+          src="img/telegramm.png"
+          alt="small_logo"
+          class="fieldset__link-logo"
+        >
+        <h3 class="fieldset__link-title">parfum_de_otto</h3>
+      </a>
+      <a href="https://t.me/ottov_roma" class="fieldset__link">
+        <img 
+          src="img/telegramm.png"
+          alt="small_logo"
+          class="fieldset__link-logo"
+        >
+        <h3 class="fieldset__link-title">ОПТ</h3>
+      </a>
+    </fieldset>
+
+    <fieldset class="fieldset main__fieldset">
+      <legend class="fieldset__legend">Мої соцмережі</legend>
+      <a href="https://www.instagram.com/ottov_roma" class="fieldset__link">
+        <img 
+          src="img/instagramm.png"
+          alt="small_logo"
+          class="fieldset__link-logo"
+        >
+        <h3 class="fieldset__link-title">ottov_roma</h3>
+      </a>
+      <a href="https://www.tiktok.com/@ottov_roma" class="fieldset__link">
+        <img
+          src="img/tiktokk.png"
+          alt="small_logo"
+          class="fieldset__link-logo"
+        >
+        <h3 class="fieldset__link-title">ottov_roma</h3>
+      </a>
+      <a href="https://t.me/ottov_roma" class="fieldset__link">
+        <img
+          src="img/telegramm.png"
+          alt="small_logo"
+          class="fieldset__link-logo"
+        >
+        <h3 class="fieldset__link-title">ottov_roma</h3>
+      </a>
+    </fieldset>
+
+    <div class="main__payment" id="paymentBtn">
+      <img src="img/coins.png" alt="small_logo" class="main__payment-logo">
+      <h3 class="main__payment-title">Реквізити для оплати</h3>
+    </div>
+
+    <article class="main__payment-details">
+      <h4>Платіж за реквізитами</h4>
+      <h4>Одержувач: <br>
+        ФОП <span id="recipient">Оттов Роман</span>
+        <button class="main__payment-details--copy" onclick="copyText('recipient')">
+        <img class="main__payment-details--copy-img" src="img/copy.png" alt="copy"></button>
+      </h4>
+      <h4>Номер рахунку IBAN(Моно): <br>
+        <span id="iban">UA103220010000026000340074928</span>
+        <button class="main__payment-details--copy" onclick="copyText('iban')">
+        <img class="main__payment-details--copy-img" src="img/copy.png" alt="copy"></button>
+      </h4>
+      <h4>Номер ЄДРПОУ:
+        <span id="number">3403717572</span>
+        <button class="main__payment-details--copy" onclick="copyText('number')">
+        <img class="main__payment-details--copy-img" src="img/copy.png" alt="copy"></button>
+      </h4>
+      <h4>У Призначенні обов'язково вкажіть: <br>
+        "<span id="text">Оплата за товари</span>"
+        <button class="main__payment-details--copy" onclick="copyText('text')">
+        <img class="main__payment-details--copy-img" src="img/copy.png" alt="copy"></button>
+      </h4>
+    </article>
+  </main>
+  <script src="script/app.js"></script>
+</body>
+</html>
