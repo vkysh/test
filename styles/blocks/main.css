@@ -37,8 +37,8 @@
   margin: 0 0 20px;
   font-size: 20px;
   line-height: 100%;
-  font-weight: 400;
-  color: var(--first-color);
+  font-weight: 500;
+  color: var(--second-color);
 }
 
 .main__payment {
@@ -97,6 +97,11 @@
 
 .main__payment-details h4 {
   font-weight: normal;
+}
+
+.main__ping {
+  width: 17px;
+  height: 17px;
 }
 
 .main__payment-details--copy {
